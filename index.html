@@ -6,23 +6,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+        integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Document</title>
 </head>
 
 <body>
     <div class="mortgage">
         <div class="container">
-            <div class="mortgage-calc">
-                <label for="#">Цена
-                    <input type="text">
-                </label>
-                <label for="#">Район
-                    <input type="text">
-                </label>
-            </div>
+
+            <form class="mortgage-form">
+                <fieldset class="mortgage-form-header">
+                    <legend class="mortgage-form-title"> Оформление ипотеки</legend>
+
+                    <label class="mortgage-form-label" for="#">Цена
+                        <input class="mortgage-form-input" type="number">
+                        <input class="mortgage-form-input-slider" type="range" value="50" min="30" max="100">
+                    </label>
+
+                    <label class="mortgage-form-label" for="#">Район
+                        <select class="mortgage-form-input" name="#" id="#">
+                            <option value="#">Миробадский</option>
+                        </select>
+                        <i class="caret fa-solid fa-caret-down"></i>
+                    </label>
+
+                    <label class="mortgage-form-label" for="#">Тип недвижимости
+                        <select class="mortgage-form-input" name="#" id="#">
+                            <option value="#">Новостройка</option>
+                        </select>
+                        <i class="caret fa-solid fa-caret-down"></i>
+                    </label>
+
+                    <label class="mortgage-form-label" for="">Первоначальный взнос
+                        <h3 class="mortgage-form-output">631 336 498 сум</h3>
+                    </label>
+
+                    <label class="mortgage-form-label" for="">Ежемесячный платеж
+                        <h3 class="mortgage-form-output">4 972 454 сум</h3>
+                    </label>
+
+                    <label class="mortgage-form-label" for="#">Срок
+                        <div class="mortgage-calc-info">
+                            <button class="mortgage-calc-info-time">5</button>
+                            <button class="mortgage-calc-info-time">10</button>
+                            <button class="mortgage-calc-info-time">15</button>
+                            <button class="mortgage-calc-info-time">20</button>
+                        </div>
+                    </label>
+                    <a class="mortgage-calc-button" href="#">Получить</a>
+
+                </fieldset>
+            </form>
+
         </div>
     </div>
-
     </div>
 </body>
 
